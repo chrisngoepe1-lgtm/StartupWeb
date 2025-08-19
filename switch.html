@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8" />
+        <title>Title</title>
+    </head>
+    <body>
+        <label for= "Weather"> Whats the wether like? </label>
+        <select  id= "Weather">
+            <option value ="Sunny">Sunny</option>
+            <option value ="windy">windy</option>
+            <option value ="rainy">rainy</option>
+            <option value ="snowy">snowy</option>
+            <option value ="cloudy">cloudy</option>
+            
+        </select>
+        <a href = "#" onclick = "btnpressed()">Go!</a>
+        <p id="OutputText">weather advice :</p>
+        
+        <script>
+            function btnpressed(){
+                var weatherSelected = document.getElementById("Weather").value;
+                var advice;
+                
+                switch(weatherSelected){
+                    case "Sunny":
+                        advice = "wear your sunglasses";
+                        break;
+                    case "windy":
+                        advice = "wear a jacket";
+                        break;
+                    case "rainy":
+                        advice = "wear a rain coat and carry an umbrella";
+                        break;
+                    case "snowy":
+                        advice = "Dress warmly";
+                        break;
+                    case "cloudy":
+                        advice = "carry a jacket. it might rain";
+                        break;
+                        
+                }
+                document.getElementById("OutputText").innerHTML = "weather advice: " + advice;
+                
+            }
+        
+        </script>
+        
+    </body>
+</html>

@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <meta charset="UTF-8" />
         <title>Title</title>
     </head>
     <body>
-        <div id="header">
-            <img src= "images/logo.png" />
-        </div>
-        <div id="tabs-top">
-            <a href="animals.html">Animals</a>
-            <a href="index.html">Maps</a>
-            <a href="places.html">Places</a>
-        </div>
-        <div id="main-Menu">
-            <img src="images/map.png" width="100%" />
-        </div>
-        <div id="tabs-bottom">
-            <a href="weather.html">Weather</a>
-            <a href="feedback.html">Feedback</a>
-        </div>
+        <h1 id="heading1"></h1>
+        <p id="paragraph1"> </p>
+        <p id="paragraph2"></p>
+        
+        <script>
+            var text1;
+            var text2;
+            var text3;
+            
+            var numA = 7;
+            var numB = 10;
+            
+            text1 = "Hello Everyone on planet Earth";
+            text2 = "I love learning java script";
+            text3 = " Js is awesome";
+            
+            
+            document.getElementById("heading1").innerHTML = (text1);
+            document.getElementById("paragraph1").innerHTML =(text2 + text3);
+            document.getElementById("paragraph2").innerHTML =( numA + " X " + numB + " = " + numA * numB);
+            
+        </script>
     </body>
 </html>
